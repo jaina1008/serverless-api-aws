@@ -27,7 +27,7 @@ def put_list_candidate():
         return json_response({"message": "candidate entry created"})
 
 
-#  Entrypoint to GET and POST requests from database with specific ID
+#  Entrypoint to GET, PUT and DELETE requests from database with specific ID
 @app.route('/candidates/<id>', methods=['GET', 'PATCH', 'DELETE'])
 def get_patch_delete_candidate(id):
     key = {'id': id}
