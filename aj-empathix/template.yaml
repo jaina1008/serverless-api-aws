@@ -30,9 +30,7 @@ Resources:
     Properties:
       CodeUri: candidates/
       Handler: app.app
-      Runtime: python3.9
-      Architectures:
-        - x86_64
+      Runtime: python3.10
       Policies:
         - DynamoDBCrudPolicy:
             TableName:
@@ -74,7 +72,7 @@ Outputs:
   # Find out more about other implicit resources you can reference within SAM
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   CandidateApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+    Description: "API Gateway endpoint URL for Prod stage for Candidate function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
   CandidateFunction:
     Description: "Candidate Lambda Function ARN"
