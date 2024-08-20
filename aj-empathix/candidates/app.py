@@ -7,7 +7,7 @@ from flask import request
 app = FlaskLambda(__name__)
 # Creating insances of DynamoDB database
 ddb = boto3.resource('dynamodb')
-# Creating a new table in database
+# Creating a new table 'candidates' in database
 table = ddb.Table('candidates')
 
 # Setting up default route
@@ -19,12 +19,13 @@ def index():
 @app.route('/candidates', methods=['GET', 'POST'])
 def put_list_candidate():
     if request.method == 'GET':
+        # Scan the database
         candidates = table.scan()['Items']
         return json_response(candidates)
     else:
-        # print('SENDING THIS:','\n', request.get_json())
-        table.put_item(Item=request.get_json())
-        return json_response({"message": "candidate entry created"})
+        table.put_item(Item=request.form.to_dict())
+        return json.dumps({"message":"candidate entry created"}), 200, {"Content-Type": "application/json"}
+        # return json_response({"message": "candidate entry created"})
 
 
 # @app.route('/candidates/<id>', methods=['GET', 'PATCH', 'DELETE'])
