@@ -1,4 +1,7 @@
 requests
 boto3
-flask
+Flask
 flask-lambda-python36
+Werkzeug
+aws-wsgi
+serverless-wsgi
