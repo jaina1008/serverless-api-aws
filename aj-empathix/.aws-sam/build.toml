@@ -5,7 +5,7 @@ codeuri = "/Users/aj/projects/serverless-API-AWS/aj-empathix/candidates"
 runtime = "python3.10"
 architecture = "x86_64"
 handler = "app.app"
-manifest_hash = "9d3e2f542d80cfb19fd3dd7616befc5c"
+manifest_hash = "b4e446fdb03d9bd87c2f71a656c1dd1b"
 packagetype = "Zip"
 functions = ["CandidateFunction"]
 
