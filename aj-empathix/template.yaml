@@ -41,26 +41,21 @@ Resources:
           Properties:
             Path: /
             Method: get
-        ListCandidates:
-          Type: Api
-          Properties:
-            Path: /candidates
-            Method: get
-        PutCandidate:
-          Type: Api
-          Properties:
-            Path: /candidates
-            Method: post
         GetCandidate:
           Type: Api
           Properties:
             Path: /candidates/{id}/
             Method: get
-        PatchCandidate:
+        PutCandidate:
           Type: Api
           Properties:
             Path: /candidates/{id}/
-            Method: patch
+            Method: put
+        PostCandidate:
+          Type: Api
+          Properties:
+            Path: /candidates
+            Method: post
         DeleteCandidate:
           Type: Api
           Properties:
