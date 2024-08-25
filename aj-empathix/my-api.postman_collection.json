@@ -30,30 +30,6 @@
 			"response": []
 		},
 		{
-			"name": "GET candidate by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/1",
-					"protocol": "https",
-					"host": [
-						"p7h7k6or04",
-						"execute-api",
-						"ap-southeast-2",
-						"amazonaws",
-						"com"
-					],
-					"path": [
-						"Prod",
-						"candidates",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "POST candidate",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {},
@@ -79,7 +55,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"id\": \"5\", \"name\": \"AJ\", \"department\": \"Technology\"}",
+					"raw": "{\"id\": \"1\", \"name\": \"Sam\", \"department\": \"Technology\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -105,21 +81,12 @@
 			"response": []
 		},
 		{
-			"name": "PUT candidate by id",
+			"name": "GET candidate by id",
 			"request": {
-				"method": "PUT",
+				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"id\": \"6\", \"name\": \"AJ_PUT\", \"department\": \"Technology\"}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/5",
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/1",
 					"protocol": "https",
 					"host": [
 						"p7h7k6or04",
@@ -131,7 +98,40 @@
 					"path": [
 						"Prod",
 						"candidates",
-						"5"
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT candidate by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"1\", \"name\": \"Sam_PUT\", \"department\": \"Technology\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/1",
+					"protocol": "https",
+					"host": [
+						"p7h7k6or04",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"candidates",
+						"1"
 					]
 				}
 			},
@@ -143,7 +143,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/5",
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/1",
 					"protocol": "https",
 					"host": [
 						"p7h7k6or04",
@@ -155,7 +155,7 @@
 					"path": [
 						"Prod",
 						"candidates",
-						"5"
+						"1"
 					]
 				}
 			},
