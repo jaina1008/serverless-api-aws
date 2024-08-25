@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "a8225b67-62da-40d0-94c8-caac313a110b",
+		"name": "my-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36232576"
+	},
+	"item": [
+		{
+			"name": "Default Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/",
+					"protocol": "https",
+					"host": [
+						"p7h7k6or04",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET candidate by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/1",
+					"protocol": "https",
+					"host": [
+						"p7h7k6or04",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"candidates",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST candidate",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"protocolVersion": "http2",
+				"strictSSL": false,
+				"tlsPreferServerCiphers": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "application",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"5\", \"name\": \"AJ\", \"department\": \"Technology\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates",
+					"protocol": "https",
+					"host": [
+						"p7h7k6or04",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"candidates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT candidate by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"6\", \"name\": \"AJ_PUT\", \"department\": \"Technology\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/5",
+					"protocol": "https",
+					"host": [
+						"p7h7k6or04",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"candidates",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE candidate by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://p7h7k6or04.execute-api.ap-southeast-2.amazonaws.com/Prod/candidates/5",
+					"protocol": "https",
+					"host": [
+						"p7h7k6or04",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"candidates",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
