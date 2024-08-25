@@ -1,17 +1,3 @@
-# Project Files
-
-This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
-
-- candidates - Code for the application's Lambda function.
-- events - Invocation events that you can use to invoke the function.
-- tests - Unit tests for the application code. 
-- template.yaml - A template that defines the application's AWS resources.
-- samconfig.toml - The configuration file that you can use to configure AWS SAM CLI command parameter values.
-- my-api.postman_collection.json - Postman JSON file with a collection of requests to test the API
-
-The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
-
-
 # API Documentation
 
 This project includes a Postman collection for testing the API endpoints.
@@ -31,6 +17,20 @@ This project includes a Postman collection for testing the API endpoints.
 
 3. **Check Responses**:
     - Each request has an example response to guide expected outcomes.
+
+
+# Project Files
+
+This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
+
+- candidates - Code for the application's Lambda function.
+- events - Invocation events that you can use to invoke the function.
+- tests - Unit tests for the application code. 
+- template.yaml - A template that defines the application's AWS resources.
+- samconfig.toml - The configuration file that you can use to configure AWS SAM CLI command parameter values.
+- my-api.postman_collection.json - Postman JSON file with a collection of requests to test the API
+
+The application uses several AWS resources, including Lambda functions and an API Gateway API. These resources are defined in the `template.yaml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
 
 
 ## Deploy the application
